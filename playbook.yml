@@ -4,3 +4,4 @@
   roles:
     - docker
     - python
+    - guest-additions
