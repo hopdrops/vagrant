@@ -2,6 +2,7 @@
 
 - [Requirements](#requirements)
 - [Usage](#usage)
+- [License](#license)
 
 ## Requirements
 
