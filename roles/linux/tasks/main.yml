@@ -1,0 +1,21 @@
+---
+- name: Update bashrc
+  blockinfile:
+    block: cd /vagrant
+    insertafter: EOF
+    path: /home/vagrant/.bashrc
+    state: present
+
+- name: Update Python alternatives
+  alternatives:
+    link: /usr/bin/python
+    name: python
+    path: /usr/bin/python3
+    priority: 50
+
+- name: Update pip alternatives
+  alternatives:
+    link: /usr/bin/pip
+    name: pip
+    path: /usr/bin/pip3
+    priority: 50
